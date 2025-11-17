@@ -1,7 +1,7 @@
 import * as XLSX from "xlsx";
 import { Assessment } from "../types";
 import { formatDate } from "./dateHelpers";
-import { formatPercentage, getSkillLevelLabel } from "./calculations";
+import { getSkillLevelLabel } from "./calculations";
 
 /**
  * Export assessments to Excel

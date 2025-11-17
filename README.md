@@ -175,31 +175,37 @@ The dashboard reads from the following Firestore collections:
 
 ## 🚢 Deployment
 
-### Option 1: Vercel (Recommended)
+### ⚡ Quick Deploy to Vercel (Recommended)
 
-1. Push code to GitHub
-2. Import project to [Vercel](https://vercel.com)
-3. Add environment variables in Vercel dashboard
-4. Deploy automatically on every push
+**Why Vercel?** Zero config, automatic HTTPS, instant deployments, preview URLs, and perfect for React apps!
 
-### Option 2: GitHub Pages
-
-1. Update `package.json` homepage field:
-
-   ```json
-   "homepage": "https://[username].github.io/[repo-name]"
-   ```
-
-2. Add GitHub secrets for environment variables
-
-3. Deploy:
+**Steps:**
+1. **Push to GitHub**
    ```bash
-   npm run deploy
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
    ```
 
-### GitHub Actions Workflow
+2. **Deploy on Vercel**
+   - Visit [vercel.com](https://vercel.com) and sign in with GitHub
+   - Click "Add New Project"
+   - Import `IE-Skill-index-Dashboard-MAS`
+   - Add your Firebase environment variables (from `.env` file)
+   - Click "Deploy" - Your dashboard goes live in 2-3 minutes! 🎉
 
-A GitHub Actions workflow is included in `.github/workflows/deploy.yml` for automatic deployment.
+3. **Configure Firebase**
+   - Add your Vercel domain (e.g., `your-project.vercel.app`) to Firebase authorized domains
+
+**📖 Detailed Guide:** See [DEPLOYMENT.md](./DEPLOYMENT.md) for complete instructions, GitHub Pages alternative, custom domains, and troubleshooting.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+Creates optimized production build in `build/` folder.
 
 ## 🔒 Security
 
