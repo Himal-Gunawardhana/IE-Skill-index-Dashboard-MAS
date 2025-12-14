@@ -18,6 +18,7 @@ import Styles from "./pages/Styles";
 import MachineTypes from "./pages/MachineTypes";
 import Reports from "./pages/Reports";
 import SkillsMatrix from "./pages/SkillsMatrix";
+import AttachmentStore from "./pages/AttachmentStore";
 
 const theme = createTheme({
   palette: {
@@ -61,6 +62,7 @@ const App: React.FC = () => {
                       <Route path="/machine-types" element={<MachineTypes />} />
                       <Route path="/skills-matrix" element={<SkillsMatrix />} />
                       <Route path="/reports" element={<Reports />} />
+                      <Route path="/attachment-store" element={<AttachmentStore />} />
                       <Route
                         path="/"
                         element={<Navigate to="/dashboard" replace />}

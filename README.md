@@ -9,6 +9,7 @@
 
 ## ✨ Features
 
+### IE Skill Assessment
 - 📊 **Real-time Analytics** - Live data updates using Firebase Firestore listeners
 - 📈 **Interactive Charts** - Efficiency trends, skill distribution, shift comparisons
 - 👥 **Worker Performance Tracking** - Individual and team performance metrics
@@ -17,6 +18,14 @@
 - 🔐 **Secure Authentication** - Firebase admin authentication
 - 📥 **Data Export** - Export data to Excel/CSV formats
 - 🎨 **Modern UI** - Material Design components with custom theming
+
+### Attachment Store (NEW!)
+- 📦 **Inventory Management** - Track sewing machine attachments across locations
+- 📱 **QR Code Scanning** - Quick attachment identification and issuance
+- 🔄 **Transaction Tracking** - Complete history of issuances, returns, and movements
+- 📍 **Location Management** - Manage multiple storage locations
+- 📊 **Real-time Stock Levels** - Live inventory counts by type and location
+- ✅ **Issue/Return/Move** - Full attachment lifecycle management
 
 ## 🚀 Tech Stack
 

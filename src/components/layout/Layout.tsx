@@ -13,6 +13,7 @@ import {
   ListItemText,
   useTheme,
   useMediaQuery,
+  Button,
 } from "@mui/material";
 import {
   Menu as MenuIcon,
@@ -25,6 +26,7 @@ import {
   GridOn as GridOnIcon,
   Description as DescriptionIcon,
   Logout as LogoutIcon,
+  Inventory as InventoryIcon,
 } from "@mui/icons-material";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
@@ -135,6 +137,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             {menuItems.find((item) => item.path === location.pathname)?.text ||
               "Dashboard"}
           </Typography>
+          <Button
+            variant="contained"
+            color="secondary"
+            startIcon={<InventoryIcon />}
+            onClick={() => navigate("/attachment-store")}
+            sx={{ mr: 2, display: { xs: "none", sm: "flex" } }}
+          >
+            Attachment Store
+          </Button>
+          <IconButton
+            color="inherit"
+            onClick={() => navigate("/attachment-store")}
+            sx={{ mr: 2, display: { xs: "flex", sm: "none" } }}
+          >
+            <InventoryIcon />
+          </IconButton>
           <Typography variant="body2">{currentUser?.email}</Typography>
         </Toolbar>
       </AppBar>
